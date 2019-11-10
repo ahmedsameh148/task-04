@@ -10,7 +10,7 @@ class Member{
 }
 
     let Members = [];
-    module.exports.checkvalidality = (members, id, mx)=> {
+    function checkvalidality (members, id, mx) {
         let counter = 0;
         members.forEach(function (i) {
             if (i.id == id)
@@ -50,6 +50,7 @@ class Member{
         return res; 
     }
 
+module.exports.checkvalidality = checkvalidality;
 module.exports.Member = Member;
 module.exports.Members = Members;
 module.exports.AddMember = AddMember;
