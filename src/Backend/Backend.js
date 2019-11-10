@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Member{
     constructor(id, name, email, mobile, committee) {
         this.id = id;
